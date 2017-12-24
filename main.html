@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="main">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="assets/css/map.css">
+    </head>
+    <body>
+        <div ng-controller="MainController as main">
+            <div id="map">
+                <div class="grid" 
+                    ng-repeat="square in main.terrain_squares"
+                    id="x{{square.x}}y{{square.y}}"
+                    row="{{square.x}}"
+                    line="{{square.y}}"
+                    style="top:{{square.x * 24 - square.y *24}}px;left:{{square.x * 48 + square.y * 48}}px">
+
+                </div>
+                <div class="terrain" 
+                    ng-repeat="square in main.terrain_squares"
+                    style="top:{{square.x * 24 - square.y *24}}px;left:{{square.x * 48 + square.y * 48}}px">
+
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="lib/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+body
+{
+  overflow: scroll;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+#map
+{
+  position: absolute;
+  left: 50%;
+}
+
+.grid
+{
+  position: absolute;
+  top: 0px;
+  width: 68px;
+  height: 68px;
+  transform: rotateX(60deg) rotateZ(45deg);
+  background: rgba(0,0,0,0);
+  z-index: 10000;
+}
+
+.selecting
+{
+  background: white;
+  opacity: 0.5;
+}
+
+.terrain
+{
+  position: absolute;
+  top: 0px;
+  width: 68px;
+  height: 68px;
+  transform: rotateX(60deg) rotateZ(45deg);
+  background: rgb(170,136,0);
+  border: 1px solid;
+  border-color: rgb(213,197,142);
+  z-index: 0;
+}
+
+#row
+{
+  position: absolute;
+  top: 0px;
+}
+
+.house
+{
+  position: absolute;
+  width: 96px;
+  height: 78px;
+  background: url("../../src/buildings/home1-r.png");
+  z-index: 1000;
+}
+
+.carbonstn
+{
+  position: absolute;
+  width: 381px;
+  height: 281px;
+  background: url("../../src/buildings/carbon-pwrstn.png");
+  z-index: 1000;
+}
