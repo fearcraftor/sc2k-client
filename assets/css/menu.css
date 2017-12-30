@@ -1,0 +1,16 @@
+button
+{
+  padding: 0;
+  height: 24px;
+}
+
+.menu
+{
+  position: fixed;
+  top: 0px;
+  left: 10px;
+  width: 80px;
+  height: 340px;
+  background-color: grey;
+  z-index: 100000;
+}
